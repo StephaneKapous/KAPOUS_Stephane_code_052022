@@ -130,9 +130,12 @@ ul {
   color: #0b65fc;
   font-size: 60%;
   padding-right: 20px;
+  margin-right: 5px;
 }
 
 .logement {
+  display: flex;
+  align-items: center;
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -144,14 +147,14 @@ ul {
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: row;
 }
 
 h2 {
   padding-left: 15px;
 }
 .hebergement {
-  height: 450px;
+  height: 600px;
   width: 800px;
   background-color: #f2f2f2;
   display: flex;
@@ -159,26 +162,21 @@ h2 {
   justify-content: space-around;
   align-content: center;
   border-radius: 25px;
+  margin-right: 20px;
 }
 
 .annonces {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0px 10px;
-}
-.annonces img {
-  height: 80px;
-  width: 184px;
 }
 
 .annonce {
-  height: 145px;
-  width: 190px;
+  height: 190px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: flex-start;
   border: 3px solid #f2f2f2;
   border-radius: 25px;
   background-color: white;
@@ -186,7 +184,7 @@ h2 {
 
 .annonce p {
   padding-left: 15px;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1px;
 }
 
@@ -195,8 +193,8 @@ h2 {
   border-top-right-radius: 20px;
   padding-top: 3px;
   padding-left: 3px;
-  height: 80px;
-  width: 184px;
+  height: 120px;
+  width: 193px;
 }
 
 .stars {
@@ -219,19 +217,25 @@ h2 {
 
 /*Populaire*/
 
+.popStar {
+}
+
 .populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-  height: 450px;
-  width: 291px;
+  height: 585px;
+  width: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .populaire img {
-  height: 97px;
-  width: 170px;
+  height: 120px;
+  width: 120px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -242,12 +246,12 @@ h2 {
   border: 3px solid #f2f2f2;
   border-radius: 25px;
   background-color: white;
-  height: 100px;
+  height: 123px;
   padding-top: 3px;
   padding-left: 3px;
 }
 .annoncePop p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /*Activites*/
@@ -262,6 +266,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 400px;
 }
 .activite1 {
   height: 360px;
