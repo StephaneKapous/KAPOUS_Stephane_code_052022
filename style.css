@@ -211,6 +211,7 @@ h2 {
   align-content: center;
   border-radius: 25px;
   margin-right: 20px;
+  min-height: 685px;
 }
 
 .annonces {
@@ -245,7 +246,7 @@ h2 {
   padding-top: 3px;
   padding-left: 3px;
   height: 120px;
-  width: 193px;
+  width: 240px;
   padding: 2px;
 }
 
@@ -280,7 +281,7 @@ h2 {
 .populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-  height: 685px;
+  min-height: 685px;
   width: 35%;
   margin-left: 2%;
   display: flex;
