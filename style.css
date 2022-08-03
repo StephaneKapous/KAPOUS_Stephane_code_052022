@@ -36,6 +36,7 @@ body {
   width: 35%;
   margin-top: 40px;
 }
+
 .lienH {
   text-decoration: none;
   border-top: solid #0b65fc;
@@ -51,6 +52,7 @@ body {
 .logo {
   margin-top: 50px;
 }
+
 .logo img {
   height: 60px;
 }
@@ -201,8 +203,7 @@ h2 {
 }
 
 .hebergement {
-  height: 600px;
-  width: 800px;
+  width: 60%;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -279,15 +280,15 @@ h2 {
 .populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-  height: 585px;
-  width: 350px;
+  height: 685px;
+  width: 35%;
+  margin-left: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 15px;
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 50px;
+  flex-direction: column;
 }
 
 .populaire img {
@@ -319,7 +320,7 @@ h2 {
   border-radius: 25px;
   background-color: white;
   height: 140px;
-  width: 300px;
+  width: 96%;
   padding: 5px;
 }
 
@@ -393,6 +394,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 0px 50px;
 }
 
 /****** responsive *******/
@@ -403,7 +405,6 @@ footer {
     justify-content: row;
     flex-direction: column-reverse;
   }
-
   .lien1 {
     display: flex;
     width: 100%;
@@ -421,14 +422,11 @@ footer {
   }
   .lienH {
     border-top: none;
-
     padding-top: 0px;
   }
-
   .trouver h1 {
     font-size: inherit;
   }
-
   .trouver p {
     font-size: small;
     margin-bottom: 30px;
@@ -487,16 +485,18 @@ footer {
     padding-bottom: 25px;
   }
   .annoncePop {
-    width: 100%;
+    width: 85%;
     margin: 0 15px;
     box-shadow: 5px 5px 5px #e4e4e4;
     border-radius: 20px;
   }
   footer {
-    flex-direction: column;
     height: 100%;
     padding-left: 25px;
     padding-top: 20px;
+  }
+  .footerContent {
+    flex-direction: column;
   }
   .activités {
     flex-direction: column;
@@ -515,15 +515,12 @@ footer {
   .populaire img {
     width: 75%;
   }
-
   .searchButton {
     display: none;
   }
-
   .searchButton2 {
     display: flex;
   }
-
   .flexBetween {
     display: flex;
     flex-direction: column;
@@ -538,11 +535,11 @@ footer {
 
 @media screen and (min-width: 2000px) {
   .content {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: auto;
   }
   .footerContent {
-    max-width: 1200px;
+    max-width: 2000px;
     margin: auto;
     display: flex;
     flex-direction: row;
