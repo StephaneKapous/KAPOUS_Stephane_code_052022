@@ -195,29 +195,27 @@ ul {
 
 .container {
   display: flex;
-  justify-content: row;
 }
 
-h2 {
+.titleHebergement {
   padding-left: 15px;
 }
 
 .hebergement {
-  width: 60%;
+  width: 80%;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
   border-radius: 25px;
   margin-right: 20px;
-  min-height: 685px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .annonces {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .annonce {
@@ -226,7 +224,7 @@ h2 {
   align-content: center;
   border-radius: 25px;
   background-color: white;
-  padding: 3px;
+  padding: 2px;
   margin-bottom: 30px;
 }
 
@@ -243,10 +241,8 @@ h2 {
 .annonce img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-top: 3px;
-  padding-left: 3px;
-  height: 120px;
-  width: 240px;
+  height: 80px;
+  width: 160px;
   padding: 2px;
 }
 
@@ -276,25 +272,24 @@ h2 {
   display: flex;
   align-items: baseline;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-  min-height: 685px;
-  width: 35%;
-  margin-left: 2%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   flex-direction: column;
 }
 
 .populaire img {
-  height: 140px;
-  width: 140px;
+  height: 110px;
+  width: 110px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   object-fit: cover;
@@ -310,23 +305,21 @@ h2 {
   display: flex;
   flex-direction: row;
   font-size: 10px;
-  padding-top: 20px;
 }
 
 .annoncePop {
   display: flex;
   flex-direction: row;
-  align-items: center;
   border: 1px solid #f2f2f2;
   border-radius: 25px;
   background-color: white;
-  height: 140px;
-  width: 96%;
-  padding: 5px;
+  margin-bottom: 15px;
+  padding: 4px;
 }
 
 .annoncePop p {
   font-size: 12px;
+  padding-bottom: 28px;
 }
 
 /*Activites*/
@@ -400,10 +393,9 @@ footer {
 
 /****** responsive *******/
 
-@media screen and (max-width: 1058px) {
+@media screen and (max-width: 768px) {
   .container {
     display: flex;
-    justify-content: row;
     flex-direction: column-reverse;
   }
   .lien1 {
@@ -485,6 +477,12 @@ footer {
     padding: 0;
     padding-bottom: 25px;
   }
+
+  .title {
+    display: flex;
+    justify-content: inherit;
+  }
+  
   .annoncePop {
     width: 85%;
     margin: 0 15px;
@@ -493,7 +491,7 @@ footer {
   }
   footer {
     height: 100%;
-    padding-left: 25px;
+    padding-left: 15px;
     padding-top: 20px;
   }
   .footerContent {
@@ -527,8 +525,8 @@ footer {
     flex-direction: column;
   }
 }
-
-@media screen and (max-width: 881px) {
+/*
+@media screen and (max-width: 768px) {
   .populaire img {
     width: 50%;
   }
