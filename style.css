@@ -241,12 +241,9 @@ ul {
 .annonce img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  /*height: 80px;
-  width: 160px;*/
 
   height: 120px;
-  width: 200px;
-
+  width: 250px;
   padding: 2px;
 }
 
@@ -255,6 +252,10 @@ ul {
   flex-direction: row;
   font-size: 10px;
   padding-left: 15px;
+}
+
+.paddingBottom {
+  padding-bottom: 10px;
 }
 
 .blueStar {
@@ -281,21 +282,13 @@ ul {
 .populaire {
   background-color: #f2f2f2;
   border-radius: 25px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
-  flex-direction: column;
 }
 
 .populaire img {
   height: 130px;
   width: 130px;
-
-  /*height: 117px;
-  width: 110px;*/
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   object-fit: cover;
@@ -313,14 +306,22 @@ ul {
   font-size: 10px;
 }
 
+.annoncePops {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .annoncePop {
   display: flex;
   flex-direction: row;
   border: 1px solid #f2f2f2;
   border-radius: 25px;
   background-color: white;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   padding: 4px;
+  width: 100%;
 }
 
 .annoncePop p {
@@ -349,7 +350,15 @@ ul {
 .boxShadow {
   box-shadow: 5px 5px 5px 5px #f2f2f2;
   border-radius: 20px;
-  margin: 15px;
+  margin: 15px 0 15px 0;
+}
+
+.marginLeft {
+  margin-left: 15px;
+}
+
+.marginRight {
+  margin-right: 15px;
 }
 
 .activite1 {
@@ -435,18 +444,23 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
   .annonce {
     box-shadow: 4px 5px 5px #e4e4e4;
     padding-bottom: 10px;
-    width: 108%;
+    width: 95%;
   }
   .hebergement {
     height: auto;
-    width: 87%;
+    width: 100%;
     border-radius: 0;
     background-color: white;
     padding: 6px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
   }
   .titleHebergement {
     font-size: 30px;
@@ -455,8 +469,8 @@ footer {
     padding-left: 0;
     padding-bottom: 25px;
     font-weight: 550;
+    margin-left: 20px;
   }
-
   .filtres li {
     margin: 0px;
     margin-right: 10px;
@@ -494,13 +508,11 @@ footer {
     padding: 0;
     padding-bottom: 25px;
   }
-
   .annonce p {
     padding-left: 15px;
     line-height: 1px;
     font-size: 20px;
   }
-
   .title {
     display: flex;
     justify-content: space-between;
@@ -508,7 +520,6 @@ footer {
     margin-right: 40px;
     font-size: 30px;
   }
-
   .annoncePop {
     width: 93%;
     margin: 0 15px;
@@ -521,11 +532,9 @@ footer {
   .activite-section h3 {
     font-size: 30px;
   }
-
   .activités img {
     height: 170px;
   }
-
   footer {
     height: 100%;
     padding-left: 15px;
@@ -552,7 +561,6 @@ footer {
     width: 36%;
     height: 150px;
   }
-
   .annoncePop p {
     font-size: 20px;
   }
@@ -566,52 +574,30 @@ footer {
     display: flex;
     flex-direction: column;
   }
-
   .footerContent {
     padding-left: 15px;
   }
-}
-/*
-@media screen and (max-width: 768px) {
-  .populaire img {
-    width: 50%;
+  .marginLeft {
+    margin-right: 15px;
+  }
+  .marginRight {
+    margin-left: 15px;
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .content {
-    max-width: 2000px;
-    margin: auto;
-  }
-  .footerContent {
-    max-width: 2000px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-*/
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   /********* filtres *************/
-
   .filtres p {
     font-size: 12px;
   }
-
   .filtres li {
     height: 38px;
   }
-
   .filtres li i {
     height: 40px;
     width: 40px;
   }
-
   /******** hebergement ************/
-
   .container {
     display: flex;
     flex-direction: column;
@@ -619,15 +605,9 @@ footer {
   .titleHebergement {
     font-size: 25px;
   }
-
   .hebergement {
     width: 95%;
     margin-bottom: 30px;
-  }
-
-  .annonces {
-    flex-wrap: nowrap;
-    overflow: scroll;
   }
 
   .annonce img {
@@ -636,28 +616,23 @@ footer {
   .annonce p {
     font-size: 15px;
   }
-
   /************ populaire ************/
-
   .populaire {
     flex-direction: column;
     flex-wrap: nowrap;
     padding-top: 15px;
   }
   .title {
-    justify-content: space-evenly;
+    margin-left: 10px;
     font-size: 25px;
   }
-
   .populaire img {
     height: 200px;
     width: 360px;
   }
-
   .annoncePop p {
     font-size: 20px;
   }
-
   .starsPop {
     font-size: 20px;
     padding-top: 45px;
