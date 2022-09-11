@@ -265,7 +265,7 @@ span {
 }
 
 .greyStar {
-  color: #f2f2f2;
+  color: rgb(221, 219, 219);
 }
 
 .plus {
@@ -399,6 +399,9 @@ footer {
   margin-top: 50px;
 }
 
+.grey {
+  color: grey;
+}
 .foot {
   padding-right: 198px;
 }
