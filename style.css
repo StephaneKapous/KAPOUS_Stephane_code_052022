@@ -193,6 +193,9 @@ ul {
 
 /*hebergement*/
 
+span {
+  color: grey;
+}
 .container {
   display: flex;
 }
@@ -234,14 +237,13 @@ ul {
 
 .annonce p {
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1px;
 }
 
 .annonce img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-
   height: 120px;
   width: 250px;
   padding: 2px;
@@ -268,6 +270,7 @@ ul {
 
 .plus {
   padding-left: 15px;
+  padding-bottom: 25px;
 }
 
 /*Populaire*/
@@ -325,7 +328,7 @@ ul {
 }
 
 .annoncePop p {
-  font-size: 12px;
+  font-size: 15px;
   padding-bottom: 28px;
 }
 
@@ -391,17 +394,19 @@ ul {
 
 footer {
   background-color: #f2f2f2;
-  height: 151px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-top: 50px;
+}
+
+.foot {
+  padding-right: 198px;
 }
 
 .footerContent {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
   width: 100%;
   padding: 0px 50px;
 }
