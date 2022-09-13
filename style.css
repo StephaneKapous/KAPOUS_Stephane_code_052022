@@ -24,9 +24,15 @@ body {
 
 .content {
   font-family: Raleway;
-  margin: 0;
+  margin: auto;
   padding: 0px 50px;
   font-size: 18px;
+  max-width: 1400px;
+}
+
+.carte {
+  text-decoration: none;
+  color: black;
 }
 
 .lien1 {
@@ -126,6 +132,10 @@ ul {
 
 /*filtre*/
 
+.filtre {
+  color: black;
+}
+
 .filtreContainer {
   display: flex;
   flex-direction: row;
@@ -141,6 +151,15 @@ ul {
   justify-content: space-around;
   align-items: center;
   margin-left: -38px;
+}
+
+.filtreLien {
+  text-decoration: none;
+  color: black;
+}
+
+.filtres a:hover {
+  color: #0065fc;
 }
 
 .filtres li {
@@ -213,6 +232,7 @@ span {
   margin-right: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  object-fit: cover;
 }
 
 .annonces {
@@ -333,6 +353,10 @@ span {
 }
 
 /*Activites*/
+
+.activite-section {
+  padding-top: 40px;
+}
 
 .activités p {
   padding-left: 8px;
@@ -537,6 +561,7 @@ footer {
     margin-bottom: 10px;
     margin-left: 4px;
   }
+
   .activite-section h3 {
     font-size: 30px;
   }
@@ -564,6 +589,7 @@ footer {
   .activite-section {
     display: flex;
     flex-direction: column;
+    margin: 2px;
   }
   .populaire img {
     width: 36%;
