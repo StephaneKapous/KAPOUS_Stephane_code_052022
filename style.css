@@ -267,6 +267,7 @@ span {
   height: 120px;
   width: 250px;
   padding: 2px;
+  object-fit: cover;
 }
 
 .stars {
@@ -433,7 +434,8 @@ footer {
 .footerContent {
   display: flex;
   flex-direction: row;
-
+  max-width: 1400px;
+  margin: auto;
   width: 100%;
   padding: 0px 50px;
 }
@@ -573,6 +575,10 @@ footer {
     padding-left: 15px;
     padding-top: 20px;
   }
+  .foot {
+    padding-right: 0px;
+  }
+
   .footerContent {
     flex-direction: column;
   }
